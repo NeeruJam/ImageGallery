@@ -11,7 +11,7 @@ body{
     border: 1px solid rgb(207, 206, 206);
 }
 .page-container{
-
+        margin-bottom: 70px;
 }
 .nav{
 
@@ -51,7 +51,7 @@ nav ul{
 nav ul li{
     color: rgb(249, 237, 218);
     padding: 20px 40px;
-    background-color:black;
+    background-color:rgb(65, 61, 61);
     
 }
 nav ul li:hover{
@@ -91,13 +91,97 @@ nav ul li a{
     }
     
 }
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(//unsplash.it/900/400/?blur);
+    background-size: cover;
+    background-color: rgb(101, 100, 97);
+    text-align: center;
+}
+
+@keyframes apper{
+    from{
+        opacity: 0.0;
+        top: -100px;
+    }
+    to{
+        opacity: 1.0;
+        top: 0.0;
+    }
+}
+
+.banner .heading{
+    flex: 1;
+    justify-self: center;
+    color:whitesmoke;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    animation: apper 1s ease-in-out 0s forwards;
+}
+
+.banner .heading small{
+    font-size: 24px;
+}
+
+.maintext{
+    font-size: 18px;
+    padding: 12px;
+}
+.subtext{
+    display: flex;
+    
+}
+.subtext div{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.subtext .red{
+    background-color: #ff6363;
+    width: 33%;
+}
+ .subtext .yellow{
+    background-color: #f0a500;
+    width: 33%;
+ }
+ .subtext .green{
+    background-color: #1eb2a6;
+    width: 33%;
+ }
+
+ .quote{
+    display: block;
+    background-color: darkgray;
+    padding: 30px;
+    text-align: center;
+    font-style: italic ;
+     }
+
+ .quote::before{
+    display: inline-block;
+    content: open-quote;
+    color: black;
+    font-size: 32px;
+ }
+ .quote::after{
+    display: inline-block;
+    content: close-quote;
+    color: black;
+    font-size: 32px;
+ }
 .footer{
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 0; 
     right: 0;
     bottom: 0;
     background-color: rgb(6, 138, 85);
     color: whitesmoke;
     text-align: center;
-    padding: 24px;
+     padding: 24px;
 }
